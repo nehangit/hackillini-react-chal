@@ -38,7 +38,7 @@ body {
 
 #board tr:nth-child(even){background-color: #575050;}
 
-#board tr:hover {background-color: #ddd;}
+#board tr:hover {background-color: #1f1b1b;}
 
 #board td {
   border: 1px solid #ddd;
@@ -50,6 +50,6 @@ body {
   padding-top: 12px;
   padding-bottom: 12px;
   padding: 20px;
-  background-color: #60c9a2;
+  background-color: #285a48;
   color: white;
 }

@@ -23,17 +23,16 @@ function Entries(props){
   }
 
   useEffect(()=>{
-  apiCall("https://api.hackillinois.org/profile/leaderboard/?limit=".concat(props.lim))     // eventually add sorting by points the other direction, 
+  apiCall("https://api.hackillinois.org/profile/leaderboard/?limit=".concat(props.lim))     // eventually add sorting by points the other direction, search by team status, id, interests, etc.
   }, [props.lim])
+  
   return resp
-
 }
 
 
 function App() {
 
   const [limit, setLimit] = useState(0)
-
   useEffect(()=>{fetch("https://api.hackillinois.org/profile/leaderboard/").then(ret => ret.json()).then((apidat)=>{
     setLimit(apidat.profiles.length)
   })}, [])
