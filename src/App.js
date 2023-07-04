@@ -51,7 +51,7 @@ function App() {
   //console.log("limit state", limit)
 
   return (
-    <div className="App">
+    <div>
       <h1 className="Title">HackIllinois Leaderboard!!</h1>
       <header className="App-body">
         <br></br>
